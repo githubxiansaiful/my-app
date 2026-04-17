@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Accessible Booking System - Modernisation Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+
+        .card {
+            background-color: #111111;
+            border: 1px solid #333333;
+            border-radius: 16px;
+        }
+
+        .stat-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+        }
+
+        .section-title {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .tag-outdated {
+            background-color: #7f1d1d;
+            color: #fca5a5;
+        }
+
+        .tag-keep {
+            background-color: #78350f;
+            color: #fcd34d;
+        }
+
+        .tag-replace {
+            background-color: #7f1d1d;
+            color: #fca5a5;
+        }
+
+        .tag-migrate {
+            background-color: #78350f;
+            color: #fcd34d;
+        }
+
+        .tag-update {
+            background-color: #1e40af;
+            color: #93c5fd;
+        }
+
+        .module-card {
+            transition: all 0.2s;
+        }
+
+        .module-card:hover {
+            transform: translateY(-2px);
+            border-color: #4b5563;
+        }
+
+        .phase-badge {
+            background-color: #2563eb;
+            color: white;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen pb-20">
+
+    <div class="max-w-[1080px] mx-auto px-6 py-10">
+
+        <!-- Top header text -->
+        <div class="text-sm text-gray-400 mb-1">
+            Architected comprehensive system redesign with modern tech stack overview
+        </div>
+        <div class="text-sm text-gray-400 mb-6">
+            Now I have a thorough understanding of the system. Let me build a comprehensive overview.
+        </div>
+
+        <!-- Title section -->
+        <div class="flex items-center gap-3 mb-6">
+            <div class="bg-amber-400 text-black text-xs font-semibold px-4 py-1.5 rounded-md">Redesign Overview</div>
+            <span class="text-gray-500">›</span>
+            <div class="text-blue-400 font-medium">GTA Accessible Booking System</div>
+        </div>
+
+        <h1 class="text-4xl font-semibold tracking-tight mb-1">Modernisation Proposal</h1>
+        <p class="text-xl text-gray-300">Legacy PHP → Next.js 14 + MySQL — full stack analysis and migration roadmap</p>
+
+        <!-- Stats row -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-5 mt-10">
+            <div class="stat-card rounded-2xl p-7 text-center">
+                <div class="text-5xl font-semibold text-orange-400">~450KB</div>
+                <div class="text-sm text-gray-400 mt-1">PHP codebase</div>
+            </div>
+            <div class="stat-card rounded-2xl p-7 text-center">
+                <div class="text-5xl font-semibold">8</div>
+                <div class="text-sm text-gray-400 mt-1">core modules</div>
+            </div>
+            <div class="stat-card rounded-2xl p-7 text-center">
+                <div class="text-5xl font-semibold text-red-400">30+</div>
+                <div class="text-sm text-gray-400 mt-1">backup file copies</div>
+            </div>
+            <div class="stat-card rounded-2xl p-7 text-center">
+                <div class="text-5xl font-semibold text-emerald-400">Next.js</div>
+                <div class="text-sm text-gray-400 mt-1">target stack</div>
+            </div>
+        </div>
+
+        <!-- Current system -->
+        <div class="mt-16">
+            <h2 class="section-title text-2xl mb-6">Current system — what we found</h2>
+            <div class="grid lg:grid-cols-2 gap-6">
+
+                <!-- Technology stack -->
+                <div class="card p-8">
+                    <h3 class="font-semibold text-lg mb-6">Technology stack (legacy)</h3>
+                    <div class="space-y-5 text-sm">
+                        <div class="flex justify-between items-center border-b border-gray-800 pb-5">
+                            <span class="text-gray-400 w-28">Language</span>
+                            <span>PHP (procedural, no framework)</span>
+                            <span class="tag-outdated text-xs px-3 py-1 rounded">outdated</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-800 pb-5">
+                            <span class="text-gray-400 w-28">Database</span>
+                            <span>MySQL via raw mysql</span>
+                            <span class="tag-keep text-xs px-3 py-1 rounded">keep DB</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-800 pb-5">
+                            <span class="text-gray-400 w-28">Frontend</span>
+                            <span>jQuery + HTML tables</span>
+                            <span class="tag-replace text-xs px-3 py-1 rounded">replace</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-800 pb-5">
+                            <span class="text-gray-400 w-28">PDF</span>
+                            <span>mPDF + FPDI</span>
+                            <span class="tag-migrate text-xs px-3 py-1 rounded">migrate</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-800 pb-5">
+                            <span class="text-gray-400 w-28">Email</span>
+                            <span>PHPMailer</span>
+                            <span class="tag-migrate text-xs px-3 py-1 rounded">migrate</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-800 pb-5">
+                            <span class="text-gray-400 w-28">Auth</span>
+                            <span>Manual PHP sessions</span>
+                            <span class="tag-replace text-xs px-3 py-1 rounded">replace</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400 w-28">Hosting</span>
+                            <span>gtaaccessible.ca/myapp/</span>
+                            <span class="tag-update text-xs px-3 py-1 rounded">update</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Critical issues -->
+                <div class="card p-8">
+                    <h3 class="font-semibold text-lg mb-6">Critical Issues Identified</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex gap-3"><span class="text-red-400 mt-1">•</span> SQL injection risk — raw string
+                            interpolation in all queries, no prepared statements or ORM</li>
+                        <li class="flex gap-3"><span class="text-red-400 mt-1">•</span> 30+ backup files in production —
+                            dispatch_20180224.php, cars_181018.php etc. shipped alongside live code</li>
+                        <li class="flex gap-3"><span class="text-red-400 mt-1">•</span> Monolithic files — dispatch.php
+                            alone is 76KB, mixing HTML, SQL, business logic and JS</li>
+                        <li class="flex gap-3"><span class="text-red-400 mt-1">•</span> No API layer — UI and data
+                            access fully intertwined, impossible to add a mobile app</li>
+                        <li class="flex gap-3"><span class="text-red-400 mt-1">•</span> Not mobile-responsive — XHTML
+                            1.0 Transitional, table-based layouts</li>
+                        <li class="flex gap-3"><span class="text-red-400 mt-1">•</span> No version control — versioning
+                            done by file-name suffixes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core modules -->
+        <div class="mt-16">
+            <h2 class="section-title text-2xl mb-6">Core modules — mapped from codebase</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-500/10 rounded-xl flex items-center justify-center text-2xl">📋</div>
+                    <div>
+                        <div class="font-medium">Dispatch</div>
+                        <div class="text-xs text-gray-400">Bookings, status, run sheets</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-purple-500/10 rounded-xl flex items-center justify-center text-2xl">👥
+                    </div>
+                    <div>
+                        <div class="font-medium">Customers</div>
+                        <div class="text-xs text-gray-400">Profiles, accounts, history</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center text-2xl">🏢
+                    </div>
+                    <div>
+                        <div class="font-medium">Companies</div>
+                        <div class="text-xs text-gray-400">Corporate accounts, billing</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center text-2xl">🚗
+                    </div>
+                    <div>
+                        <div class="font-medium">Vehicles</div>
+                        <div class="text-xs text-gray-400">Car management, assignment</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-pink-500/10 rounded-xl flex items-center justify-center text-2xl">🧍</div>
+                    <div>
+                        <div class="font-medium">Drivers</div>
+                        <div class="text-xs text-gray-400">Settlement, run sheets</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-amber-500/10 rounded-xl flex items-center justify-center text-2xl">📍</div>
+                    <div>
+                        <div class="font-medium">Addresses</div>
+                        <div class="text-xs text-gray-400">Restricted, blocked locations</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-cyan-500/10 rounded-xl flex items-center justify-center text-2xl">📊</div>
+                    <div>
+                        <div class="font-medium">Reports & PDFs</div>
+                        <div class="text-xs text-gray-400">Car, customer, settlement PDFs</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-violet-500/10 rounded-xl flex items-center justify-center text-2xl">🔑
+                    </div>
+                    <div>
+                        <div class="font-medium">Users & Auth</div>
+                        <div class="text-xs text-gray-400">Roles, sessions, login</div>
+                    </div>
+                </div>
+                <div class="module-card card p-5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-rose-500/10 rounded-xl flex items-center justify-center text-2xl">💰</div>
+                    <div>
+                        <div class="font-medium">Quotes & Invoicing</div>
+                        <div class="text-xs text-gray-400">Quotes, account statements</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proposed architecture -->
+        <div class="mt-16">
+            <h2 class="section-title text-2xl mb-6">Proposed architecture — Next.js 14 + MySQL</h2>
+            <div class="grid lg:grid-cols-5 gap-6">
+
+                <!-- Application layers -->
+                <div class="lg:col-span-3 card p-8">
+                    <h3 class="font-semibold mb-6">Application layers</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="flex-1 bg-blue-600/10 border border-blue-600/30 rounded-2xl p-6 text-center font-medium">
+                                Browser / Mobile</div>
+                            <div class="text-3xl text-gray-600">→</div>
+                            <div
+                                class="flex-1 bg-indigo-600/10 border border-indigo-600/30 rounded-2xl p-6 text-center font-medium">
+                                Next.js 14 App Router</div>
+                        </div>
+
+                        <div class="bg-zinc-900 border border-zinc-700 rounded-2xl p-6">
+                            <div class="font-medium text-sm">Server Components — data fetching, SSR pages</div>
+                            <div class="mt-4 text-xs text-gray-400">API Routes — REST endpoints for dispatch, CRUD</div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-1 bg-emerald-600/10 border border-emerald-600/30 rounded-2xl p-6 text-center font-medium">
+                                Prisma ORM</div>
+                            <div
+                                class="flex-1 bg-amber-600/10 border border-amber-600/30 rounded-2xl p-6 text-center font-medium">
+                                MySQL 8 (existing data)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New technology choices -->
+                <div class="lg:col-span-2 card p-8">
+                    <h3 class="font-semibold mb-6">New technology choices</h3>
+                    <div class="grid grid-cols-1 gap-y-5 text-sm">
+                        <div class="flex justify-between"><span class="text-gray-400">Framework</span><span
+                                class="font-medium">Next.js 14 (App Router)</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Language</span><span
+                                class="font-medium">TypeScript</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Database</span><span
+                                class="font-medium">MySQL 8 + Prisma ORM</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Auth</span><span
+                                class="font-medium">NextAuth.js <span
+                                    class="text-xs bg-blue-900 text-blue-300 px-2 py-0.5 rounded">sessions +
+                                    roles</span></span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">UI</span><span
+                                class="font-medium">Tailwind CSS + shadcn/ui <span
+                                    class="text-xs bg-purple-900 text-purple-300 px-2 py-0.5 rounded">responsive</span></span>
+                        </div>
+                        <div class="flex justify-between"><span class="text-gray-400">PDF</span><span
+                                class="font-medium">React-PDF / Puppeteer <span
+                                    class="text-xs bg-emerald-900 text-emerald-300 px-2 py-0.5 rounded">server-side</span></span>
+                        </div>
+                        <div class="flex justify-between"><span class="text-gray-400">Email</span><span
+                                class="font-medium">Nodemailer / Resend <span
+                                    class="text-xs bg-teal-900 text-teal-300 px-2 py-0.5 rounded">modern</span></span>
+                        </div>
+                        <div class="flex justify-between"><span class="text-gray-400">Hosting</span><span
+                                class="font-medium">Vercel or self-hosted VPS <span
+                                    class="text-xs bg-sky-900 text-sky-300 px-2 py-0.5 rounded">flexible</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Migration roadmap -->
+        <div class="mt-16">
+            <h2 class="section-title text-2xl mb-6">Migration roadmap — 4 phases</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Phase 1 -->
+                <div class="card p-7">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="phase-badge">Phase 1</span>
+                        <span class="font-semibold">Foundation — 2–3 weeks</span>
+                    </div>
+                    <ol class="space-y-6 text-sm">
+                        <li><span class="font-semibold text-blue-400">1</span> Project setup + DB migration<br><span
+                                class="text-gray-400 text-xs block mt-1">Next.js setup, TypeScript config, Prisma schema
+                                from existing MySQL, Git versioning</span></li>
+                        <li><span class="font-semibold text-blue-400">2</span> Authentication<br><span
+                                class="text-gray-400 text-xs block mt-1">NextAuth with role-based access (admin,
+                                dispatcher, driver) replacing PHP sessions</span></li>
+                        <li><span class="font-semibold text-blue-400">3</span> Core API routes<br><span
+                                class="text-gray-400 text-xs block mt-1">REST endpoints for customers, companies,
+                                vehicles, addresses with Prisma queries</span></li>
+                    </ol>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="card p-7">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="phase-badge">Phase 2</span>
+                        <span class="font-semibold">Dispatch core — 3–4 weeks</span>
+                    </div>
+                    <ol class="space-y-6 text-sm">
+                        <li><span class="font-semibold text-blue-400">4</span> Dispatch module<br><span
+                                class="text-gray-400 text-xs block mt-1">New booking form, current/pending/completed
+                                views, real-time status updates</span></li>
+                        <li><span class="font-semibold text-blue-400">5</span> Customer & company management<br><span
+                                class="text-gray-400 text-xs block mt-1">Full CRUD with search, account history,
+                                restriction flags</span></li>
+                        <li><span class="font-semibold text-blue-400">6</span> Vehicle & driver management<br><span
+                                class="text-gray-400 text-xs block mt-1">Car assignment, run sheets, driver settlement
+                                views</span></li>
+                    </ol>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="card p-7">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="phase-badge">Phase 3</span>
+                        <span class="font-semibold">Reports & PDFs — 2 weeks</span>
+                    </div>
+                    <ol class="space-y-6 text-sm">
+                        <li><span class="font-semibold text-blue-400">7</span> PDF report generation<br><span
+                                class="text-gray-400 text-xs block mt-1">React-PDF server components for car reports,
+                                customer reports, settlement PDFs</span></li>
+                        <li><span class="font-semibold text-blue-400">8</span> Dashboard & analytics<br><span
+                                class="text-gray-400 text-xs block mt-1">Date-range reports, daily/weekly dispatch
+                                summaries, revenue overview</span></li>
+                    </ol>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="card p-7">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="phase-badge">Phase 4</span>
+                        <span class="font-semibold">Launch & migration — 1–2 weeks</span>
+                    </div>
+                    <ol class="space-y-6 text-sm">
+                        <li><span class="font-semibold text-blue-400">9</span> Data migration & validation<br><span
+                                class="text-gray-400 text-xs block mt-1">Full MySQL data migration, integrity checks,
+                                parallel run with old system</span></li>
+                        <li><span class="font-semibold text-blue-400">10</span> Testing & cutover<br><span
+                                class="text-gray-400 text-xs block mt-1">UAT with dispatchers, DNS cutover, legacy
+                                system retired</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key gains -->
+        <div class="mt-16">
+            <h2 class="section-title text-2xl mb-6">Key gains from the rebuild</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-solid fa-lock text-3xl text-emerald-400"></i>
+                        <div class="font-semibold text-lg">Security</div>
+                    </div>
+                    <p class="text-sm text-gray-300">Prisma ORM eliminates SQL injection. NextAuth handles sessions
+                        securely. TypeScript catches bugs at compile time.</p>
+                </div>
+                <div class="card p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-solid fa-mobile-screen text-3xl text-sky-400"></i>
+                        <div class="font-semibold text-lg">Mobile-ready</div>
+                    </div>
+                    <p class="text-sm text-gray-300">Tailwind + responsive layouts replace fixed-width HTML tables.
+                        Dispatchers and drivers can use tablets and phones.</p>
+                </div>
+                <div class="card p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-solid fa-bolt text-3xl text-amber-400"></i>
+                        <div class="font-semibold text-lg">Performance</div>
+                    </div>
+                    <p class="text-sm text-gray-300">Next.js Server Components stream data. API routes replace page
+                        reloads. Partial updates without full-page refresh.</p>
+                </div>
+                <div class="card p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-solid fa-wrench text-3xl text-violet-400"></i>
+                        <div class="font-semibold text-lg">Maintainability</div>
+                    </div>
+                    <p class="text-sm text-gray-300">One codebase in Git replaces 30+ file-name-versioned backups.
+                        Components are reusable and independently testable.</p>
+                </div>
+                <div class="card p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-solid fa-plug text-3xl text-rose-400"></i>
+                        <div class="font-semibold text-lg">API-first</div>
+                    </div>
+                    <p class="text-sm text-gray-300">Clean REST API means a driver mobile app or customer-facing booking
+                        portal can be added without rebuilding the backend.</p>
+                </div>
+                <div class="card p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-solid fa-database text-3xl text-teal-400"></i>
+                        <div class="font-semibold text-lg">Data preserved</div>
+                    </div>
+                    <p class="text-sm text-gray-300">Existing MySQL database is kept and migrated. All historical
+                        records, customers, and companies carry over.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next step box -->
+        <div class="mt-12 bg-gradient-to-r from-blue-950 to-indigo-950 border border-blue-800 rounded-3xl p-8 text-sm">
+            <strong>Next step:</strong> We recommend starting with a Prisma schema reverse-engineered from the live
+            MySQL database, and building the authentication + dispatch module first — these are the highest-risk,
+            highest-value pieces. A detailed technical spec document and database ERD can be produced next.
+        </div>
+
+        <!-- Bottom text -->
+        <div class="mt-16 text-sm leading-relaxed max-w-3xl mx-auto text-gray-400">
+            <p class="mb-6">Here's a full breakdown of what's in the current system and how we'd approach the rebuild.
+            </p>
+
+            <p class="font-medium mb-3">What the codebase revealed:</p>
+            <p class="mb-6">The app is a PHP/MySQL dispatching system for an accessible transportation company (GTA
+                Accessible) with 9 core modules — the largest being a 76KB monolithic <span
+                    class="font-mono text-red-300">dispatch.php</span> that mixes SQL, HTML, business logic and jQuery
+                all in one file. There are 30+ time-stamped backup copies of files (dispatch_20180224.php,
+                cars_181018.php etc.) sitting in the production folder, which is a significant security and
+                maintainability risk. All database queries use raw string interpolation — no prepared statements — which
+                creates SQL injection exposure across the entire app.</p>
+
+            <p class="font-medium mb-3">The proposed stack:</p>
+            <ul class="list-disc pl-6 space-y-2 mb-8">
+                <li>Next.js 14 (App Router) for both the frontend and API layer</li>
+                <li>TypeScript throughout for type safety and tooling</li>
+                <li>MySQL preserved — the existing data migrates over, Prisma ORM sits on top of it</li>
+                <li>NextAuth.js for session management and role-based access (admin / dispatcher / driver)</li>
+                <li>Tailwind CSS + shadcn/ui for a responsive, mobile-friendly UI</li>
+                <li>React-PDF or Puppeteer to replicate the existing PDF report generation</li>
+            </ul>
+
+            <p class="mb-6">The migration is structured in 4 phases spanning roughly 8-10 weeks: foundation + auth →
+                dispatch core + customer/vehicle management → reports/PDFs → data migration and cutover.</p>
+
+            <p>The key advantage is that the existing MySQL database is kept intact — all historical records, customers,
+                dispatch history and companies carry over. We're replacing the application layer, not the data layer.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
