@@ -440,12 +440,21 @@ body.woocommerce #content-area div.product .woocommerce-tabs ul.tabs li.active {
 .xscp-product-tabs {
     border: 1px solid #d9d9d9;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .xscp-product-tabs .xscp-tab-headers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 !important;
+    list-style: none !important;
+    text-align: center;
+    background: #d9d9d9;
+}
+
+.xscp-product-tabs .xscp-tab-headers li.active {
+    background: #161616;
+    color: #fff;
 }
 
 .xscp-product-tabs .xscp-tab-contents {
