@@ -483,3 +483,7 @@ body.single-product .xs-product-short-descriptions ul {
     border-top: 1px solid #d9d9d9;
     padding-top: 23px;
 }
+
+.xs-product-short-descriptions img {
+    margin-bottom: 10px;
+}
