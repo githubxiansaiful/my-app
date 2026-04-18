@@ -369,3 +369,9 @@ body .product-comparison-features {
 body.single.single-product .et_pb_wc_add_to_cart button:after {
     display: none !important;
 }
+
+.custom-product-info-table ul.tabs.wc-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
