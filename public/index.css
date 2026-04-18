@@ -374,4 +374,30 @@ body.single.single-product .et_pb_wc_add_to_cart button:after {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    border-radius: 10px !important;
+}
+
+.custom-product-info-table ul.tabs.wc-tabs li {
+    font-size: 18px !important;
+    padding: 0 !important;
+}
+
+body .et_pb_row .custom-product-info-table .woocommerce-tabs .tabs.wc-tabs li a {
+    padding: 10px 0 !important;
+    display: block !important;
+}
+
+body.woocommerce .woocommerce-tabs {
+    border-radius: 10px !important;
+}
+
+body.woocommerce div.product .woocommerce-tabs ul.tabs li,
+body.woocommerce #content-area div.product .woocommerce-tabs ul.tabs li,
+body.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+body.woocommerce #content-area div.product .woocommerce-tabs ul.tabs li.active {
+    border: none !important
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    display: none !important;
 }
