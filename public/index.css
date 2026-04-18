@@ -383,8 +383,13 @@ body.single.single-product .et_pb_wc_add_to_cart button:after {
 }
 
 body .et_pb_row .custom-product-info-table .woocommerce-tabs .tabs.wc-tabs li a {
-    padding: 10px 0 !important;
+    padding: 15px 0 !important;
     display: block !important;
+}
+
+body .et_pb_row .custom-product-info-table .woocommerce-tabs .tabs.wc-tabs li.active a {
+    color: #fff !important;
+    background: #161616;
 }
 
 body.woocommerce .woocommerce-tabs {
