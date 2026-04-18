@@ -436,3 +436,8 @@ body.woocommerce #content-area div.product .woocommerce-tabs ul.tabs li.active {
     text-transform: uppercase !important;
     line-height: 1.3 !important;
 }
+
+.xscp-product-tabs {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
