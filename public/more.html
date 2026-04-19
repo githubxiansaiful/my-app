@@ -1,46 +1,249 @@
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;>
-    <thead>
-        <tr style=" background-color: #f2f2f2;">
-    <th style="text-align: left;">Property</th>
-    <th style="text-align: left;">Details</th>
-    </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Frame Material</strong></td>
-            <td>Full Carbon</td>
-        </tr>
-        <tr>
-            <td><strong>Foam Material</strong></td>
-            <td>TPU</td>
-        </tr>
-        <tr>
-            <td><strong>Base Plate Material</strong></td>
-            <td>CF-PA (Carbon + Polyamide CF)</td>
-        </tr>
-        <tr>
-            <td><strong>Screws</strong></td>
-            <td>V2A Stainless Steel</td>
-        </tr>
-        <tr>
-            <td><strong>Width</strong></td>
-            <td>Variable, adjustable</td>
-        </tr>
-        <tr>
-            <td><strong>Length</strong></td>
-            <td>Variable, adjustable</td>
-        </tr>
-        <tr>
-            <td><strong>Weight</strong></td>
-            <td>from 160 g</td>
-        </tr>
-        <tr>
-            <td><strong>Build Height</strong></td>
-            <td>Variable, depending on adjustment</td>
-        </tr>
-        <tr>
-            <td><strong>Load Capacity (Rider Weight)</strong></td>
-            <td>100–130 kg</td>
-        </tr>
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Booking Confirmation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+        .email-container {
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .content {
+            padding: 40px 35px;
+            color: #1f2937;
+        }
+
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .details-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+
+        .detail-label {
+            font-weight: 500;
+            color: #64748b;
+            width: 45%;
+        }
+
+        .detail-value {
+            font-weight: 600;
+            color: #1e2937;
+            text-align: right;
+            width: 55%;
+        }
+
+        .trip-title {
+            background-color: #eff6ff;
+            color: #1e40af;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin: 30px 0 15px 0;
+            font-size: 17px;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 20px;
+        }
+
+        .two-column .detail-row {
+            flex: 1;
+            margin: 0;
+            padding: 12px 0;
+        }
+
+        .return-notice {
+            background-color: #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 18px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-size: 15px;
+            color: #92400e;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1e40af;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 25px 0;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #f8fafc;
+            padding: 30px 35px;
+            text-align: center;
+            font-size: 14px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .highlight {
+            color: #1e40af;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>✅ Booking Confirmed</h1>
+            <p>Your trip with GTA Accessible Transportation is confirmed</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <p class="greeting">Dear Xian Test,</p>
+
+            <p>Thank you for booking with <strong>GTA Accessible Transportation</strong>. Your trip has been
+                successfully booked and confirmed.</p>
+
+            <!-- Outbound Trip -->
+            <div class="trip-title">Outbound Trip • Dispatch ID: 137015</div>
+            <div class="details-box">
+                <div class="detail-row">
+                    <div class="detail-label">Passenger Name</div>
+                    <div class="detail-value">Xian Test</div>
+                </div>
+                <div class="two-column">
+                    <div class="detail-row">
+                        <div class="detail-label">Pickup Date</div>
+                        <div class="detail-value">19 April 2026</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Pickup Time</div>
+                        <div class="detail-value">06:00</div>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Pickup Location</div>
+                    <div class="detail-value">1235 Wilson Ave South Entrance</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Dropoff Location</div>
+                    <div class="detail-value">3902 Arbourview Terrace, Mississauga</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Reference #</div>
+                    <div class="detail-value">016400</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Special Instructions</div>
+                    <div class="detail-value">I would like to book big wheelchair • Cost $20 • Pay your driver with card
+                    </div>
+                </div>
+            </div>
+
+            <!-- Return Trip -->
+            <div class="trip-title">Return Trip • Dispatch ID: 137016</div>
+            <div class="details-box">
+                <div class="two-column">
+                    <div class="detail-row">
+                        <div class="detail-label">Pickup Date</div>
+                        <div class="detail-value">19 April 2026</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Pickup Time</div>
+                        <div class="detail-value"><span class="highlight">Will Call</span></div>
+                        <p style="background: #3b82f6;padding: 10px; border-radius: 10px; color: #eff6ff;">If your return trip time is listed as “Will Call,” the client is required to contact us at
+                            416-834-0559 or 905-886-1000 to request the return service. Once we receive your call, we
+                            will make every effort to arrange pickup within 30 minutes.</p>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Pickup Location</div>
+                    <div class="detail-value">3902 Arbourview Terrace, Mississauga</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Dropoff Location</div>
+                    <div class="detail-value">1235 Wilson Ave South Entrance</div>
+                </div>
+            </div>
+
+            <!-- Return Trip Notice -->
+            <div class="return-notice">
+                <strong>Important for Return Trip:</strong><br>
+                Since your return trip shows "<strong>Will Call</strong>", please call us when you are ready:<br><br>
+                <strong>416-834-5559</strong> or <strong>905-886-1000</strong>
+            </div>
+
+            <p style="text-align:center; margin:30px 0;">
+                <a href="#" class="button">View Full Booking Details</a>
+            </p>
+
+            <p>If you have any questions, feel free to contact us:</p>
+            <p style="text-align:center; margin:20px 0; font-size:16px;">
+                📞 <strong>416-834-5559</strong><br>
+                ✉️ <a href="mailto:info@gtaaccessible.com" style="color:#1e40af;">info@gtaaccessible.com</a>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Thank you for choosing <strong>GTA Accessible Transportation</strong></p>
+            <p>We look forward to serving you safely and comfortably.</p>
+            <p style="margin-top:20px;">
+                GTA Accessible Dispatch Team<br>
+                <small>© 2026 GTA Accessible Transportation</small>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
