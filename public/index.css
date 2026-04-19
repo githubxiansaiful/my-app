@@ -499,5 +499,5 @@ body.single-product .xs-product-short-descriptions ul {
 
 .et_pb_wc_add_to_cart .wapf-field-row .wapf-field-container.wapf-field-checkboxes .wapf-field-description {
     order: 2 !important;
-    
+    padding-top: 0 !important;
 }
