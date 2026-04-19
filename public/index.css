@@ -487,3 +487,17 @@ body.single-product .xs-product-short-descriptions ul {
 .xs-product-short-descriptions img {
     margin-bottom: 10px;
 }
+
+.et_pb_wc_add_to_cart .wapf-field-row .wapf-field-container.wapf-field-checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.et_pb_wc_add_to_cart .wapf-field-row .wapf-field-container.wapf-field-checkboxes .wapf-field-input {
+    order: 3 !important;
+}
+
+.et_pb_wc_add_to_cart .wapf-field-row .wapf-field-container.wapf-field-checkboxes .wapf-field-description {
+    order: 2 !important;
+    
+}
