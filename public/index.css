@@ -510,3 +510,17 @@ body.single-product .xs-product-short-descriptions ul {
 body.home .et-menu-nav .xoo-wsc-sc-bki::before {
     color: #004871 !important;
 }
+
+/* Product Page */
+.et_pb_wc_add_to_cart .wapf-swatch--color .wapf-tt-content {
+    display: block !important;
+}
+
+.et_pb_wc_add_to_cart .wapf-swatch--color .wapf-tt-content .wapf-ttp {
+    background: transparent !important;
+    color: #161616 !important;
+}
+
+.et_pb_wc_add_to_cart .wapf-swatch--color .wapf-tt-content .wapf-ttp:after {
+    display: none !important;
+}
