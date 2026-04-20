@@ -502,6 +502,10 @@ body.single-product .xs-product-short-descriptions ul {
     padding-top: 0 !important;
 }
 
+.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container.wapf-field-checkboxes .label-above .wapf-field-label {
+    margin-bottom: 0 !important;
+}
+
 /* Home Page Header */
 body.home .et-menu-nav .xoo-wsc-sc-bki::before {
     color: #004871 !important;
