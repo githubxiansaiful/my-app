@@ -488,21 +488,21 @@ body.single-product .xs-product-short-descriptions ul {
     margin-bottom: 10px;
 }
 
-.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container.wapf-field-checkboxes {
+.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container {
     display: flex;
     flex-direction: column;
 }
 
-.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container.wapf-field-checkboxes .wapf-field-input {
+.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container .wapf-field-input {
     order: 3 !important;
 }
 
-.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container.wapf-field-checkboxes .wapf-field-description {
+.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container .wapf-field-description {
     order: 2 !important;
     padding-top: 0 !important;
 }
 
-.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container.wapf-field-checkboxes .wapf-field-label {
+.et_pb_wc_add_to_cart .wapf-wrapper .wapf-field-container .wapf-field-label {
     margin-bottom: 0 !important;
 }
 
